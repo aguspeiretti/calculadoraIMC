@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="contenido">
+          <h1>Calcula tu IMC (indice de masa corporal)</h1>
+          <h3>
+            El índice de masa corporal (IMC) es el peso de una persona en
+            kilogramos dividido por el cuadrado de la estatura en metros. El IMC
+            es un método de evaluación fácil y económico para la categoría de
+            peso: bajo peso, peso saludable, sobrepeso, y obesidad.
+          </h3>
+          <div class="contenedor-contenedores">
+            <div class="contenedor-lista">
+              <ul class="lista">
+                <li class="elementos-lista">Menos de 18.5: bajo peso</li>
+                <li class="elementos-lista">
+                  Entre 18,5 y 24,9: peso normal o adecuado
+                </li>
+                <li class="elementos-lista">Entre 25.0 y 29,9: sobrepeso</li>
+                <li class="elementos-lista">
+                  Entre 30,0 y 34,9: obesidad grado 1
+                </li>
+                <li class="elementos-lista">
+                  Entre 35,0 y 39,9: obesidad grado 2
+                </li>
+                <li class="elementos-lista">Mayor a 40: obesidad grado 3</li>
+              </ul>
+            </div>
+            <div class="botones">
+              <h3>ingrese su peso en kg</h3>
+              <h4>78.5 kilos</h4>
+              <input id="peso" type="text" placeholder="   Kilogramos" />
+
+              <h3>ingrese su altura en Metros</h3>
+              <h4>Ejemplo: 182cm = 1.82 metros</h4>
+              <input id="altura" type="text" placeholder="    Metros" />
+              <button onclick="extraerDatos()">listo!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./main.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

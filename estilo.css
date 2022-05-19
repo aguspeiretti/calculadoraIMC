@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./Dia-de-la-nutricion.gif);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 80%;
+  height: auto;
+  background-color: rgba(240, 248, 255, 0.842);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  height: 90%;
+}
+.contenido h1 {
+  font-family: sans-serif;
+  color: orange;
+}
+.contenido h3 {
+  margin-top: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.contenedor-contenedores {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-lista {
+  background-color: aliceblue;
+  border-radius: 15px;
+  width: 30vw;
+  height: 45vh;
+  min-width: 30vw;
+  border: 3px solid orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.elementos-lista {
+  list-style: none;
+  text-align: start;
+  color: black;
+  font-family: sans-serif;
+  line-height: 2.5vw;
+  font-size: 16px;
+  font-weight: 600;
+}
+.botones {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 370px;
+  height: 350px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 100px;
+}
+input {
+  height: 30px;
+  border-radius: 10px;
+}
+input ::placeholder {
+  margin-left: 20px;
+}
+button {
+  height: 30px;
+  width: 60px;
+}
+@media (max-width: 768px) {
+  .contenedor-lista {
+    width: 100%;
+  }
+  .elementos-lista {
+    line-height: 4vh;
+  }
+  .botones {
+    padding-left: 0;
+  }
+}
